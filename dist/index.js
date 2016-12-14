@@ -1,7 +1,6 @@
-/// <reference path="./di.d.ts"/>
-/// <reference path="./node_modules/reflect-metadata/reflect-metadata.d.ts"/>
-require('reflect-metadata');
-var di = require('di');
+"use strict";
+require("reflect-metadata");
+var di = require("di");
 exports.Injector = di.Injector;
 function factory(data) {
     function F() {
@@ -11,7 +10,7 @@ function factory(data) {
     return new F();
 }
 function Inject(classFunc) {
-    var dependencies = Reflect.getMetadata("design:paramtypes", classFunc) || [];
+    var dependencies = Reflect.getMetadata('design:paramtypes', classFunc) || [];
     di.annotate(classFunc, factory(dependencies));
 }
 exports.Inject = Inject;

@@ -2,14 +2,24 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es5",
+    "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "sourceMap": false
+    "noImplicitAny": false,
+    "noLib": false,
+    "declaration": true,
+    "sourceMap": true,
+    "removeComments": true,
+    "outDir": "dist/"
   },
+  "typeRoots": [
+    "./node_modules/@types"
+  ],
   "files": [
-    "di-ts.d.ts",
-    "index.ts",
-    "spec/fixtures.ts",
-    "spec/main.ts"
-  ]
+    "src/di.d.ts",
+    "src/index.ts",
+    "src/index.spec.ts"
+  ],
+  "compileOnSave": false
 }
+

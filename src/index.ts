@@ -1,13 +1,10 @@
-/// <reference path="./di.d.ts"/>
-/// <reference path="./node_modules/reflect-metadata/reflect-metadata.d.ts"/>
-
 import 'reflect-metadata';
-import * as di from 'di'
+import * as di from 'di';
 
 export var Injector = di.Injector;
 
-function factory(data: Array<any>) : di.Inject {
-  function F() : void {
+function factory(data: Array<any>): di.Inject {
+  function F(): void {
     di.Inject.apply(this, data);
   }
   F.prototype = di.Inject.prototype;
@@ -15,7 +12,7 @@ function factory(data: Array<any>) : di.Inject {
 }
 
 export function Inject(classFunc: any) {
-  const dependencies = Reflect.getMetadata("design:paramtypes", classFunc) || [];
+  const dependencies = Reflect.getMetadata('design:paramtypes', classFunc) || [];
   di.annotate(classFunc, factory(dependencies));
 }
 

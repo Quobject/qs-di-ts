@@ -1,22 +1,26 @@
-
-
 # Dependency Injection for Typescript
 Lightweight wrap and extension of [di.js](https://github.com/angular/di.js) for TypeScript.
-
+forked from https://github.com/VaclavObornik/di-ts and rewritten in TypeScript v2
 
 ## Install
 ````bash
-npm install di-ts
+npm install qs-di-ts
 ````
 
 ## Usage
  
-You need to use --emitDecoratorMetadata flag when compile you typescript files. 
-"emitDecoratorMetadata" flag is supported by the 1.5 beta version of TypeScript.
+You need to use 
+
+```
+ "emitDecoratorMetadata": true,
+ "experimentalDecorators": true,
+ ```
+
+when compiling you typescript files. 
 
 ### car.ts
 ```typescript
-import {Inject} from 'di-ts'
+import {Inject} from 'qs-di-ts'
 import {Engine} from './engine'
 
 @Inject
@@ -34,7 +38,7 @@ export class Engine {
 
 ### mockEngine.ts
 ```typescript
-import {Provide} from 'di-ts'
+import {Provide} from 'qs-di-ts'
 import {Engine} from './engine'
 
 @Provide(Engine)
@@ -45,9 +49,8 @@ export class MockEngine {
 
 ### main.ts
 ```typescript
-/// <reference path="node_modules/di-ts/di-ts.d.ts"/>
 
-import {Injector} from 'di-ts'
+import {Injector} from 'qs-di-ts'
 import {Car} from './car'
 import {Engine} from './engine'
 
