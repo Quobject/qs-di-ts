@@ -2,6 +2,13 @@
 Lightweight wrap and extension of [di.js](https://github.com/angular/di.js) for TypeScript.
 forked from https://github.com/VaclavObornik/di-ts
 
+[![NPM](https://nodei.co/npm/qs-di-ts.png?downloads=true&downloadRank=true)](https://nodei.co/npm/qs-di-ts/)
+[![NPM](https://nodei.co/npm-dl/qs-di-ts.png?months=6&height=3)](https://nodei.co/npm/qs-di-ts/)
+
+[![NPM version][npm-image]][npm-url]
+[![NPM downloads][downloads-image]][downloads-url]
+
+
 ## Install
 ````bash
 npm install qs-di-ts
@@ -64,3 +71,11 @@ var car2: Car = injector2.get(Car); //instantiate car, car.engine is instance of
 ```
 
 
+## License
+
+MIT
+
+[npm-image]: https://img.shields.io/npm/v/qs-di-ts.svg?style=flat
+[npm-url]: https://npmjs.org/package/qs-di-ts
+[downloads-image]: https://img.shields.io/npm/dm/qs-di-ts.svg?style=flat
+[downloads-url]: https://npmjs.org/package/qs-di-ts

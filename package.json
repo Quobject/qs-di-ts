@@ -1,6 +1,6 @@
 {
   "name": "qs-di-ts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Lightweight wrap and extension of di.js v2 for TypeScript.",
   "main": "dist/index.js",
   "typings": "dist/index",
