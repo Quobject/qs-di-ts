@@ -1,5 +1,4 @@
 import 'reflect-metadata';
-import * as di from 'di';
-export declare var Injector: typeof di.Injector;
+export declare var Injector: any;
 export declare function Inject(classFunc: any): void;
 export declare function Provide(targetClassFunc: any): (classFunc: any) => void;

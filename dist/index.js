@@ -1,6 +1,6 @@
 "use strict";
 require("reflect-metadata");
-var di = require("di");
+var di = require('di');
 exports.Injector = di.Injector;
 function factory(data) {
     function F() {

@@ -1,6 +1,5 @@
 # Dependency Injection for Typescript
-Lightweight wrap and extension of [di.js](https://github.com/angular/di.js) for TypeScript.
-forked from https://github.com/VaclavObornik/di-ts
+Lightweight wrap of [di.js](https://github.com/angular/di.js) for TypeScript.
 
 [![NPM](https://nodei.co/npm/qs-di-ts.png?downloads=true&downloadRank=true)](https://nodei.co/npm/qs-di-ts/)
 [![NPM](https://nodei.co/npm-dl/qs-di-ts.png?months=6&height=3)](https://nodei.co/npm/qs-di-ts/)

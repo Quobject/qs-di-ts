@@ -16,7 +16,6 @@
     "./node_modules/@types"
   ],
   "files": [
-    "src/di.d.ts",
     "src/index.ts",
     "src/index.spec.ts"
   ],

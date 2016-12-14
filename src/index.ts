@@ -1,9 +1,9 @@
 import 'reflect-metadata';
-import * as di from 'di';
+let di = require('di');
 
 export var Injector = di.Injector;
 
-function factory(data: Array<any>): di.Inject {
+function factory(data: Array<any>): any {
   function F(): void {
     di.Inject.apply(this, data);
   }

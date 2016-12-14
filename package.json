@@ -1,7 +1,7 @@
 {
   "name": "qs-di-ts",
-  "version": "1.0.3",
-  "description": "Lightweight wrap and extension of di.js v2 for TypeScript.",
+  "version": "1.0.4",
+  "description": "Lightweight wrap of di.js v2 for TypeScript.",
   "main": "dist/index.js",
   "typings": "dist/index",
   "files": [
@@ -21,7 +21,7 @@
     "di.js"
   ],
   "author": "Matthias Ludwig",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "di": "^2.0.0-pre-14",
     "reflect-metadata": "^0.1.8"
