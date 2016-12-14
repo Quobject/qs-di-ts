@@ -1,6 +1,6 @@
 # Dependency Injection for Typescript
 Lightweight wrap and extension of [di.js](https://github.com/angular/di.js) for TypeScript.
-forked from https://github.com/VaclavObornik/di-ts and rewritten in TypeScript v2
+forked from https://github.com/VaclavObornik/di-ts
 
 ## Install
 ````bash
@@ -16,7 +16,7 @@ You need to use
  "experimentalDecorators": true,
  ```
 
-when compiling you typescript files. 
+when compiling typescript files. 
 
 ### car.ts
 ```typescript
